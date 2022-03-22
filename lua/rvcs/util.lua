@@ -11,6 +11,7 @@ end
 function M.load(theme)
   if vim.g.colors_name then
     vim.cmd 'hi clear'
+    vim.g.colors_name = "rvcs"
   end
   vim.o.termguicolors = true
   for _, v in pairs(theme) do
